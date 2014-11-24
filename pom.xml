@@ -6,10 +6,20 @@
 
   <groupId>org.chtijbug.osgi</groupId>
   <artifactId>lambdaj.osgi</artifactId>
-  <version>2.3.3</version>
-
+  <version>2.3.3-SNAPSHOT</version>
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
 
   <name>ChtiJBUG lambdaj OSGI</name>
+
+  <scm>
+    <connection>scm:git:git@github.com:chtiJBUG/osgi.lambdaj.git</connection>
+    <url>scm:git:git@github.com:chtiJBUG/osgi.lambdaj.git</url>
+    <developerConnection>scm:git:git@github.com:chtiJBUG/osgi.lambdaj.git</developerConnection>
+  </scm>
 
   <build>
     <plugins>
@@ -42,17 +52,6 @@
       <version>2.3.3</version>
     </dependency>
   </dependencies>
-  <distributionManagement>
-    <repository>
-      <id>chtijbug-release</id>
-      <name>chtijbug repo release</name>
-      <url>http://192.168.1.45:8081/nexus/content/repositories/chtijbug-release/</url>
-    </repository>
-    <snapshotRepository>
-      <id>chtijbug-snapshot</id>
-      <name>chtijbug repo release</name>
-      <url>http://192.168.1.45:8081/nexus/content/repositories/chtijbug-snapshot/</url>
-    </snapshotRepository>
-  </distributionManagement>
+
 </project>
 
